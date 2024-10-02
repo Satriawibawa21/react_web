@@ -1,38 +1,102 @@
-.App {
+/* General styles */
+body {
+  font-family: Arial, sans-serif; /* Use a more modern font */
+  margin: 0;
+  padding: 0;
+  background-color: #f8f9fa; /* Light background for the whole app */
+}
+
+/* Header styles */
+.App-header {
+  background-color: #282c34;
+  color: white;
+  padding: 20px;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+/* Navigation styles */
+nav {
+  background-color: #f8f9fa; /* Light background for the nav */
+  padding: 10px;
+  text-align: center;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+nav ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0; /* Reset margin to avoid unwanted spacing */
 }
 
-.App-header {
+nav ul li {
+  display: inline; /* Align links horizontally */
+  margin: 0 15px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #007bff; /* Link color */
+  transition: color 0.3s; /* Smooth transition for hover effect */
+}
+
+nav ul li a:hover {
+  text-decoration: underline; /* Underline on hover */
+  color: #0056b3; /* Darker blue on hover */
+}
+
+/* Main content styles */
+.App-main {
+  padding: 20px;
+  min-height: calc(100vh - 120px); /* Ensure the main content has enough height */
+}
+
+/* Footer styles */
+.App-footer {
   background-color: #282c34;
-  min-height: 100vh;
+  color: white;
+  text-align: center;
+  padding: 10px;
+  position: relative;
+  bottom: 0; /* Ensure footer is at the bottom */
+  width: 100%; /* Full width */
+}
+
+/* Social icons styles */
+.social-icons {
+  margin: 10px 0; /* Add some spacing above and below */
+}
+
+.social-icons a {
+  margin: 0 10px;
+  color: white;
+  text-decoration: none;
+  transition: color 0.3s; /* Smooth transition for hover effect */
+}
+
+.social-icons a:hover {
+  text-decoration: underline;
+  color: #f8f9fa; /* Light color on hover */
+}
+
+/* Home container styles */
+.home-container {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  justify-content: space-between; /* Pushes footer to the bottom */
+  min-height: 100vh; /* Ensures the footer stays at the bottom */
+}
+
+/* Home specific styles */
+.home-header {
+  background-color: #282c34;
   color: white;
+  padding: 20px;
+  text-align: center;
 }
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.home-footer {
+  background-color: #282c34;
+  color: white;
+  padding: 10px;
+  text-align: center;
 }

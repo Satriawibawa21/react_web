@@ -1,0 +1,63 @@
+/* General Layout */
+.mahasiswa-container {
+    text-align: center;
+    padding: 20px;
+  }
+  
+  table {
+    width: 80%;
+    margin: 20px auto;
+    border-collapse: collapse;
+  }
+  
+  table, th, td {
+    border: 1px solid #ddd;
+  }
+  
+  th, td {
+    padding: 10px;
+    text-align: left;
+  }
+  
+  th {
+    background-color: #f4f4f4;
+  }
+  
+  button {
+    padding: 5px 10px;
+    margin: 5px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  button.delete-btn {
+    background-color: #f44336;
+  }
+  
+  button.update-btn {
+    background-color: #ff9800;
+  }
+  
+  button:hover {
+    opacity: 0.8;
+  }
+  
+  .form-container {
+    margin: 20px auto;
+    width: 50%;
+  }
+  
+  .form-container input {
+    padding: 10px;
+    margin: 10px 0;
+    width: 100%;
+    box-sizing: border-box;
+  }
+  
+  .form-container button {
+    width: 100%;
+  }
+  
